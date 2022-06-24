@@ -72,7 +72,7 @@
   color: #41428b;
 }
 
-.loginButton {
+.siginuploginButton {
   height: 50px;
   width: 60%;
   align-self: center;
@@ -87,7 +87,7 @@
 }
 
 .signupButton:hover,
-.loginButton:hover,
+.siginuploginButton:hover,
 .signupForgot:hover {
   opacity: 0.5;
   cursor: pointer;

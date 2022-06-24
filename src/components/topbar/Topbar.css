@@ -1,5 +1,5 @@
 .topbarContainer {
-  background-color: #2c517c;
+  background-color: #6633CC;
   height: 50px;
   width: 100%;
   display: flex;
@@ -52,12 +52,13 @@
   flex: 4;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: end;
   color: white;
 }
 
 .topbarItemIcons {
   display: flex;
+  margin-right: 10px;
 }
 
 .topbarIconItem {

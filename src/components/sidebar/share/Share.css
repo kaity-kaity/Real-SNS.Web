@@ -24,10 +24,11 @@
 
 .shareInput {
   border: none;
+  height: 30px;
   width: 100%;
 }
 
-.shareInput:hover {
+.shareInput:focus {
   outline: none;
 }
 
@@ -65,7 +66,7 @@
 .shareButton {
   border: none;
   padding: 6px 17px;
-  background-color: #2c517c;
+  background-color: #6633CC;
   border-radius: 5px;
   color: white;
   cursor: pointer;

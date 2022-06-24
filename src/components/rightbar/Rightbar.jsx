@@ -32,47 +32,48 @@ const HomeRightbar = () => {
         alt=""
         className="rightbarPromotionImg"
       />
-      <p className="promotionName">カーショップ</p>
+      <p className="promotionName">パーソナルトレーニング</p>
       <img
         src="assets/promotion/promotion3.jpeg"
         alt=""
         className="rightbarPromotionImg"
       />
-      <p className="promotionName">ShinCode株式会社</p>
+      <p className="promotionName">BASE株式会社</p>
     </>
   );
 };
 
 const ProfileRightbar = () => {
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <>
       <h4 className="rightbarTitle">ユーザー情報</h4>
       <div className="rightbarInfo">
         <div className="rightbarInfoItem">
           <span className="rightbarInfoKey">出身:</span>
-          <span className="rightbarInfoKey">福岡</span>
+          <span className="rightbarInfoKey">大阪</span>
         </div>
         <h4 className="rightbarTitle">あなたの友達</h4>
         <div className="roghtbarFollowings">
           <div className="rightbarFollowing">
             <img
-              src="assets/person/1.jpeg"
+              src={PUBLIC_FOLDER + "/person/yamada.jpeg"}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Kaity Code</span>
+            <span className="rightbarFollowingName">Yamada</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/2.jpeg"
+              src={PUBLIC_FOLDER + "/person/yamaki.jpeg"}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Tanaka</span>
+            <span className="rightbarFollowingName">Yamaki</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/3.jpeg"
+              src={PUBLIC_FOLDER + "/person/koga.jpeg"}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -80,19 +81,19 @@ const ProfileRightbar = () => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/4.jpeg"
+              src={PUBLIC_FOLDER + "/person/matukubo.jpeg"}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Jason</span>
+            <span className="rightbarFollowingName">Matukubo</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/5.jpeg"
+              src={PUBLIC_FOLDER + "/person/kikukawa.jpeg"}
               alt=""
               className="rightbarFollowingImg"
             />
-            <span className="rightbarFollowingName">Shinji</span>
+            <span className="rightbarFollowingName">Kikukawa</span>
           </div>
         </div>
       </div>
@@ -100,11 +101,11 @@ const ProfileRightbar = () => {
   );
 };
 
-const Rightbar = ({ profile }) => {
+const Rightbar = ({ user }) => {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {profile ? <ProfileRightbar /> : <HomeRightbar />}
+        {user ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );

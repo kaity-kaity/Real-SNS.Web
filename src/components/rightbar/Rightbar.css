@@ -114,6 +114,12 @@
   justify-content: space-between;
 }
 
+.roghtbarFollowings::after {
+  content: "";
+  display: block;
+  width: 30%;
+}
+
 .rightbarFollowing {
   display: flex;
   flex-direction: column;
